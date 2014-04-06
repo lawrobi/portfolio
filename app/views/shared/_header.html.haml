@@ -1,0 +1,22 @@
+.large-3.columns
+	.backgroundnoir
+		%ul
+			%li
+				=link_to "Home", "/home/homepage"
+			%li
+				=link_to "Portfolio", "/portfolio/home"
+			%li
+				=link_to "About", "/home/about"
+
+.large-9.columns
+	%ul.example-orbit{"data-orbit" => "", "data-options" => "animation_speed:20000;circular:true;bullets:false;slide_number:false;timer_speed: 5000;navigation_arrows: false;stack_on_small:false;"}
+		%li
+			%img{:src => "/assets/hills2.jpg"}
+		%li
+			%img{:src => "/assets/dove2.jpg"}
+		%li
+			%img{:src => "/assets/hey2.jpg"}
+		%li
+			%img{:src => "/assets/mainble2.jpg"}
+		%li
+			%img{:src => "/assets/hey1.jpg"}

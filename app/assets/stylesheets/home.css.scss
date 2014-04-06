@@ -1,0 +1,51 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@mixin gradient_red {
+	background-image: -ms-linear-gradient(bottom, #D23E37 0%, #EC6650 100%);
+	background-image: -moz-linear-gradient(bottom, #D23E37 0%, #EC6650 100%);
+	background-image: -o-linear-gradient(bottom, #D23E37 0%, #EC6650 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #D23E37), color-stop(1, #EC6650));
+	background-image: -webkit-linear-gradient(bottom, #D23E37 0%, #EC6650 100%);
+	background-image: linear-gradient(to right, #353535, #707070, #353535);
+}
+
+body {font-family:arial;@include gradient_red;}
+
+.container1 {box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);}
+
+.backgroundnoir {background:url("/assets/backgroundnoir.jpg");background-size:100%;height:240px;}
+.backgroundnoir a{color:white;}
+
+.backgroundnoir li{list-style:none;color:rgb(178,178,178);line-height:40px;padding-left:15px;}
+
+.columns{margin:0%!important;}
+
+.fontyield{background-color:#707070;min-height:500px;border-radius:8px;margin-top:20px;.margin-left{margin-left:30px;position:relative;top:20px;}}
+
+.content li {display:inline;}
+
+.photo img{height:200px;}
+
+.headerborder{border-bottom:2px solid rgb(58,58,58);}
+
+.listsn li{display:inline;img{width:40px;};}
+
+.tabs{@include gradient_red;}
+
+.tabs dd > a{color:rgb(255,255,255);background-color:transparent!important;}
+
+.tabs dd > a:hover{color:rgb(255,255,255);background-color:transparent!important;text-shadow: 1px 1px #FD830A;}
+
+
+
+
+.subheader1 {
+  line-height: 1.4;font-family:Helvetica;
+  color: white;
+  font-weight: 300;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+}

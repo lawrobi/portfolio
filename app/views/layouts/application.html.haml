@@ -1,0 +1,30 @@
+!!!
+%html
+	%head
+		%title Laurent Nussbaum Official Website
+		= stylesheet_link_tag    "application", media: "all"
+		= javascript_include_tag "application"
+		= csrf_meta_tags
+		= favicon_link_tag 'faviconlaurent.ico'
+
+
+	%body
+		.row
+			.large-12.columns.small-12
+				%img{:src => "/assets/logoln.png", :style => "width:130px;float:left;"}
+				%img{:src => "/assets/portrait.png", :style => "float:left;width:60px;position:relative;top:10px;"}
+				.fronthead{:style => "font-family:avenir;font-size:32px;color:#DEDEDE;font-weight:100;text-align:right;position:relative;top:20px;"}
+					LAURENT NUSSBAUM
+					%br/
+					.greyfronthead{:style => "font-size:20px;text-align:right;color:#949494;"}
+						Entrepreneur, Developer, Writer 
+		.row
+			.large-12.columns.container1
+
+				= render :partial => 'shared/header', :style => "width:70%;"
+
+				.row
+					.large-12.columns.small-12
+						.fontyield
+							.margin-left
+								= yield
