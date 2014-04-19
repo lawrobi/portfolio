@@ -18,7 +18,6 @@ body {font-family:arial;@include gradient_red;}
 
 .container1 {box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);}
 
-.backgroundnoir {background:url("/assets/backgroundnoir.jpg");background-size:100%;height:240px;}
 .backgroundnoir a{color:white;}
 
 .backgroundnoir li{list-style:none;color:rgb(178,178,178);line-height:40px;padding-left:15px;}
@@ -52,4 +51,9 @@ body {font-family:arial;@include gradient_red;}
   font-weight: 300;
   margin-top: 0.2em;
   margin-bottom: 0.5em;
+}
+
+.disclaimer{
+  padding:20px 0px;
+  background: url("/assets/backgroundnoir.jpg") no-repeat center;background-size:100%;height:266px;
 }
